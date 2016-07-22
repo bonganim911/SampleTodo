@@ -25,3 +25,5 @@ accounts-twitter
 accounts-google
 practicalmeteor:mocha
 dispatch:mocha-phantomjs
+anti:fake
+dburles:factory

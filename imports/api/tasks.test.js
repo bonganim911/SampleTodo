@@ -28,13 +28,6 @@ if(Meteor.isServer){
         assert.equal(Tasks.find().count(), 0);
 
       });
-
-      it('can insert task', () => {
-        const insertTask = Meteor.server.method_handlers['tasks.insert'];
-        const invocation = { userId };
-        insertTask.apply(invocation, ['test task 1']);
-        assert.equal(Tasks.find().count(), 1);
-      });
     });
   });
 }
